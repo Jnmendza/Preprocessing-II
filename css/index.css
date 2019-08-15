@@ -248,12 +248,22 @@ body .nav-bar .nav-links a {
   border-radius: 10px;
 }
 .home .content-pick {
-  padding-top: 30px;
+  padding: 25px 0;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  max-height: 275px;
+  margin-bottom: 20px;
+}
+.home .content-pick .destination .btn {
+  background-color: #008B8B;
+  width: 90%;
+  height: 20%;
+  font-size: 1.7rem;
+  color: #FFFFFF;
+  border-radius: 10px;
+  text-align: center;
 }

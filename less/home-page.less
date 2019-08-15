@@ -61,14 +61,19 @@
   }
 
   .content-pick {
-    padding-top: 30px;
+    padding: 25px 0;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
-    }
-  }
+      max-height: 275px;
+      margin-bottom: 20px;
+        .btn {
+          .btn-style(@btn-color, @white);
+            
+      }
+    }//Closes .destination
+  }//Closes .content-pick
 }// home
