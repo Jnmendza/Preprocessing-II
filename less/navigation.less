@@ -6,16 +6,30 @@ body .nav-bar{
     width:100%;
     margin: 10px auto 0 auto;
     border-bottom: 2px dashed silver;
+
+    @media @phone {
+        flex-direction: column;
+    }
         .logo{
             a{
                 text-decoration: none;
-            }
-        }
+                h1 {
+                    @media @phone {
+                        text-align: center;
+                        margin: 10px 0;
+                    }//closes media @phone
+                }//closes h1
+            }//closes a
+        }//closes .logo
         .nav-links{
             display: flex;
             align-items: center;
             width:40%;
             justify-content: space-between;
+            @media @phone {
+                width: 100%;
+                justify-content: space-around;
+            }
             a{
                 font-size:18px;
                 text-decoration: none;

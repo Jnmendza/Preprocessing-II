@@ -176,14 +176,31 @@ body .nav-bar {
   margin: 10px auto 0 auto;
   border-bottom: 2px dashed silver;
 }
+@media (max-width: 500px) {
+  body .nav-bar {
+    flex-direction: column;
+  }
+}
 body .nav-bar .logo a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  body .nav-bar .logo a h1 {
+    text-align: center;
+    margin: 10px 0;
+  }
 }
 body .nav-bar .nav-links {
   display: flex;
   align-items: center;
   width: 40%;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .nav-bar .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 body .nav-bar .nav-links a {
   font-size: 18px;
