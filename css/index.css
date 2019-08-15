@@ -225,8 +225,18 @@ body .nav-bar .nav-links a {
   margin: 0px auto;
   border-bottom: 2px dashed silver;
 }
+@media (max-width: 500px) {
+  .header {
+    max-width: 90%;
+  }
+}
 .header .welcome {
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -234,15 +244,35 @@ body .nav-bar .nav-links a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section .inverse-content {
+    background: pink;
+  }
+}
+.home .content-section .inverse-content .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .content-section .inverse-content .text-content {
+    width: 100%;
+  }
+}
+.home .content-section .inverse-content .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .content-section .inverse-content .img-content {
+    width: 100%;
+  }
+}
+.home .content-section .inverse-content .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
