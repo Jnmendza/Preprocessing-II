@@ -1,31 +1,66 @@
-.home {
+//HEADER STYLES
+.header{
+  max-width: 800px;
+  width:100%;
+  margin: 0px auto;
+  border-bottom: 2px dashed silver;
+  @media @phone {
+    max-width: 90%;
+}
+  .welcome{
+      margin: 20px 0;
+  }
 
+}
+
+
+
+.home {
+  
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    @media @phone {
     
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
-    }
+      margin: 20px 0;
   }
+     .text-content {
+        width: 48%;
+        padding-right: 1%;
+        @media @phone {
+          width: 90%;
+          margin: 0 auto;
+      }
+      }//closes .text-content
+
+      .img-content {
+        width: 49%;
+        padding-left: 1%;
+        @media @phone {
+          width: 90%;
+          margin: 0 auto;
+      }
+        img {
+          border-radius: 10px;
+          @media @phone {
+            width: 100%;
+        }
+        }//closes img
+      }//closes .img-content
+    }// ************************closes .content-section
+  }// ******************************closes .home
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @phone {
+      display: flex;
+    flex-direction: column-reverse;
+    margin: 20px 0;
+  }
 
     .text-content {
       padding-left: 1%;
@@ -42,20 +77,39 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width:90%;
+  }
     img {
       border-radius: 10px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
+    padding: 25px 0;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      width:90%;
+      width:80%;
+      flex-direction: column;
+      margin: 0 auto;
+  }
+
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      max-height: 275px;
+      margin-bottom: 20px;
+      @media @phone {
+        width:100%;
+      width: 40px 0;  
     }
-  }
-}// home
+      .btn{
+        height: 20%;
+        .btn-style( @btn-color, @white)
+      }
+      }
+    }//Closes .destination
+
